@@ -1,0 +1,28 @@
+params:
+  epoch: 10
+  batch_size: 16
+
+optim:
+  lr: 0.001
+  decay: 0.001
+  betas: 
+    - 0.8
+    - 0.5
+
+sched:
+  annel_strategy: linear
+
+manifest_files:
+  data_name: final_pidgin_data.csv
+  
+
+paths:
+  tokenizer_path: C:/Users/USER/Omeife/ai/models/BertForClassification
+  model_path: C:/Users/USER/Omeife/ai/models/BertForClassification
+  manifest_path: C:/Users/USER/Omeife/ai/models/BertForClassification
+
+bert_configs:
+  maxlen: 512
+  n_out: 3
+  tokenizer_name: 'bert-base-uncased'
+  model_name: 'bert-base-uncased'
